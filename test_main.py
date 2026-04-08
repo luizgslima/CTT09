@@ -12,4 +12,4 @@ def test_multiplicar():
     response = client.get("/multiplicar/2/2")
     assert response.status_code == 200
     # ERRO INTENCIONAL: Esperando 5 em vez de 4
-    assert response.json() == {"resultado": 5}
+    assert response.json() == {"resultado": 4}
